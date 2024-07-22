@@ -1,0 +1,27 @@
+https://www.w3schools.com/jsref/met_document_queryselector.asp
+
+QuerySelector Methods:
+
+The querySelector() Method
+
+The querySelectorAll() Method
+
+GetElement Methods:
+
+The getElementById() Method
+
+The getElementsByTagName() Method
+
+The getElementsByClassName() Method
+
+innerText, innerHTML
+
+
+
+
+function type->
+closures -> inner function has access to outside variable. example counter
+anonoumus function  -> function without a name
+Higher order function-> passing one function inside another , return function form another as variable. treat function as variable.
+
+rest operator, spread operator 
