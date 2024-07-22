@@ -19,7 +19,7 @@
 
 
 //breakpoints
-let a = 10;
+/*let a = 10;
 let b = 20;
 
 function abc(a,b) { 
@@ -29,6 +29,13 @@ function abc(a,b) {
   console.log(a+ b);
   //debugger;  use debugger keyword
 }
-abc(a,b);
+//abc(a,b);
 console.log('coming here');
-console.error('coming here');
+console.error('coming here');*/
+
+
+
+"use strict";  // always use at top shows erorr which are hidden by default example varaible is not defined etc.
+
+a = 10;
+
