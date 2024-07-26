@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<script>
+axios.get('https://reqres.in/api/users')
+  .then(function (response) {
+    //console.log("Status: ", response.status);
+    console.log("Data: ", response.data.data);
+    //const data = JSON.parse(response.data.data);
+    for(dat in response.data.data) {
+      console.log(response.data.data[dat].id);
+      console.log(response.data.data[dat].email);
+       console.log(response.data.data[dat].first_name);
+       console.log(response.data.data[dat].last_name);
+    }
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+</script>
+</html>
