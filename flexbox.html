@@ -1,0 +1,43 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.flex-container {
+			display: flex;
+		    gap: 20px;*/
+		/*	flex-wrap: wrap;
+			/*justify-content: center;*/
+			/* align-items: center;*/
+			flex-direction: row;
+		}
+		.flex-container div {
+			background: red;
+			width: 200px;
+			height: 200px;
+		}
+
+		/* Responsive layout - makes a one column layout instead of a two-column layout */
+		@media (max-width: 800px) {
+		  .flex-container {
+		    flex-direction: column;
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+	  <div>1</div>
+	  <div>2</div>
+	  <div>3</div>
+	  <div>4</div>
+	  <div>5</div>
+	  <div>6</div>
+	</div>
+
+</body>
+</html>
