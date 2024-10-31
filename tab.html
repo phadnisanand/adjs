@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tabcontent#London{
+ display: block;
+}
+</style>
+</head>
+<body>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks">London</button>
+  <button class="tablinks">Paris</button>
+  <button class="tablinks">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+let tabclass = document.querySelector('.tab');
+	tabclass.addEventListener('click', function (e) {
+	if( e.target.className == 'tablinks') {
+		let tabcontent = document.getElementsByClassName("tabcontent");
+		let cityName = e.target.innerHTML;
+		for (i = 0; i < tabcontent.length; i++) {
+			if(tabcontent[i].id != cityName) {
+				tabcontent[i].style.display = "none";
+			} else {
+				document.getElementById(cityName).style.display = "block";
+			}
+		}
+	}
+});
+</script>
+</body>
+</html>
